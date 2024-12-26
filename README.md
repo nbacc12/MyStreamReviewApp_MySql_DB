@@ -63,9 +63,6 @@ The purpose of the MyStream Review database is to gather & maintain information 
 
 ![image](https://user-images.githubusercontent.com/122691372/232227643-3f088db4-583f-4eb8-9d55-0fb1a973a0ff.png)
 
-*See link for draw.io file:*  
-https://drive.google.com/file/d/1BOlK8odkXIPD57EIfSxUW8aQtQZDL475/view?usp=sharing
-
 ### EER Model - MySQL
 
 ![image](https://user-images.githubusercontent.com/122691372/232228567-6ad47729-0aaa-424d-9b6a-2523a3b9a875.png)
