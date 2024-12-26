@@ -4,9 +4,8 @@ This project involves developing a relational database for a Review web applicat
 
 ## Technology Stack
 
-MySQL
-DOCKER
-MySQL Workbench
+- **Database:**  MySQL
+- **Applications:**  MySQL Workbench, Docker
 
 ## Instructions
 
