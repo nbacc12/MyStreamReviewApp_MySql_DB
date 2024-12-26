@@ -58,3 +58,41 @@ The purpose of the MyStream Review database is to gather & maintain information 
 -	A user with admin permission can only set another user’s status to active or inactive to control their access to the app
 -	A user with admin permission can only amend the permission of another user
 -	A user with admin permission can only add, update, delete a TV Series & its content
+
+### Entity Relationship Diagram
+
+![image](https://user-images.githubusercontent.com/122691372/232227643-3f088db4-583f-4eb8-9d55-0fb1a973a0ff.png)
+
+*See link for draw.io file:*  
+https://drive.google.com/file/d/1BOlK8odkXIPD57EIfSxUW8aQtQZDL475/view?usp=sharing
+
+### EER Model - MySQL
+
+![image](https://user-images.githubusercontent.com/122691372/232228567-6ad47729-0aaa-424d-9b6a-2523a3b9a875.png)
+
+### Description of Tables
+
+| Table  | Description |
+| ------------- | ------------- |
+| Users  | Stores user information  |
+| TV_series  | Stores information of added TV series  |
+| Like_rating  | Record of likes given by a specific user for a TV Series, 0 – dislike, 1 – Like  |
+| Review  | Record of reviews written by a specific user for a TV series  |
+| Genre	  | Stores list of genres a TV series could fall under  |
+| Streaming_service  | Stores list of streaming platform providers for a TV series  |
+| Permission  | List of roles a user may have, regular or admin  |
+| user_tvlisting  | Linking table that stores list of users with admin rights who updated/edited a TV series listing  |
+| user_permission  | Linking table that stores a list of roles assigned to a user  |
+| tvgenre_listing  | Linking table that stores a list of genres assigned to a TV series  |
+
+### Relational Model
+-	User (<ins>user_id</ins>, user_name, encrypted_pass, first_name, last_name, email, is_admin, is_active, created_at, updated_at)
+-	TV Series (<ins>tvseries_id</ins>, title, image, description, release_date, stream_id(fk), created_at, updated_at)
+-	Genre (<ins>genre_id</ins>, genre_type, created_at, updated_at)
+-	Streaming Service (<ins>stream_id</ins>, platform, created_at, updated_at)
+-	Like Rating (<ins>like_id</ins>, user_id(fk), tvseries_id(fk), is_like, created_at, updated_at)
+-	Review (<ins>review_id</ins>, user_id(fk), tvseries_id(fk), content, created_at, updated_at)
+-	Permission (<ins>permit_id</ins>, name, description, created_at, updated_at)
+-	User_TV Listing (<ins>usertv_id</ins>, user_id(fk), tvseries_id(fk), created_at, updated_at)
+-	User_Permission (<ins>userpermit_id</ins>, user_id(fk), permit_id(fk), created_at, updated_at)
+-	TV_Genre Listing (<ins>genretv_id</ins>, tvseries_id(fk), genre_id(fk), created_at, updated_at)
