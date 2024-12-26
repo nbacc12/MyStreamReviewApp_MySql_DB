@@ -47,4 +47,14 @@ The purpose of the MyStream Review database is to gather & maintain information 
 - A TV Series may have one or more Like Rating; A Like Rating must belong to one and only one TV Series.
 - A TV Series may have one or more Reviews; A Review must belong to one and only one TV Series.
 - A TV Series must have one or more Genres; A Genre may belong to one or more TV Series.
-- A TV Series must belong to one and only one Streaming Service; A Streaming service may have one or more TV Series. 
+- A TV Series must belong to one and only one Streaming Service; A Streaming service may have one or more TV Series.
+
+### Business Rules
+-	A user can only provide one like or dislike but not both for the same tv series
+-	A user can only provide one review for the same tv series
+-	A like rating can only have the following values: 0 – dislike, 1 – Like
+-	A user’s status can only have the values:  0 – Inactive, 1 – Active
+-	A permission can only be a regular or admin
+-	A user with admin permission can only set another user’s status to active or inactive to control their access to the app
+-	A user with admin permission can only amend the permission of another user
+-	A user with admin permission can only add, update, delete a TV Series & its content
