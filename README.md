@@ -38,3 +38,13 @@ The purpose of the MyStream Review database is to gather & maintain information 
 -	Review
 -	Genre
 -	Streaming Service
+
+### Relationships
+- A User may complete a task on one or more TV Series; A TV Series may have a task completed by one or more Users.
+- A User must have one or more Permission; A Permission must be associated with one or more User.
+- A User may submit one or more Like Rating; A Like Rating must belong to one and only one User. 
+- A User may submit one or more Review; A Review must belong to one and only one User.
+- A TV Series may have one or more Like Rating; A Like Rating must belong to one and only one TV Series.
+- A TV Series may have one or more Reviews; A Review must belong to one and only one TV Series.
+- A TV Series must have one or more Genres; A Genre may belong to one or more TV Series.
+- A TV Series must belong to one and only one Streaming Service; A Streaming service may have one or more TV Series. 
