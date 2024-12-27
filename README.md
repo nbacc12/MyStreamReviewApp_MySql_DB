@@ -100,7 +100,7 @@ The purpose of the MyStream Review database is to gather & maintain information 
 -	Streaming Service (<ins>stream_id</ins>, platform, created_at, updated_at)
 -	Like Rating (<ins>like_id</ins>, user_id(fk), tvseries_id(fk), is_like, created_at, updated_at)
 -	Review (<ins>review_id</ins>, user_id(fk), tvseries_id(fk), content, created_at, updated_at)
--	Permission (<ins>permit_id</ins>, name, description, created_at, updated_at)
+-	Permission (<ins>permit_id</ins>, pm_name, pm_descript, created_at, updated_at)
 -	User_TV Listing (<ins>usertv_id</ins>, user_id(fk), tvseries_id(fk), created_at, updated_at)
 -	User_Permission (<ins>userpermit_id</ins>, user_id(fk), permit_id(fk), created_at, updated_at)
 -	TV_Genre Listing (<ins>genretv_id</ins>, tvseries_id(fk), genre_id(fk), created_at, updated_at)
