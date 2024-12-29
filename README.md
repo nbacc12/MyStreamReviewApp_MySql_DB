@@ -11,7 +11,7 @@ This project involves developing a relational database for a Review web applicat
 
 1) Start Docker and login if needed
 2) Open local command line terminal
-3) Run the following line in command line: 
+3) Run the following in command line: 
 
 ```sh
     docker run --name mystreamreview-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:8.0
@@ -21,7 +21,7 @@ This project involves developing a relational database for a Review web applicat
 6) Click on `Store in Vault ...` in the password section and enter the following password:  `root`
 7) Click on `Test Connection` to verify the connection
 8) Once verified, click on `OK`
-9) Test database entering `SELECT NOW()` and executing it
+9) Test database by entering `SELECT NOW()` and executing it
 
 ## Database Design
 
