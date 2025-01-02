@@ -110,6 +110,11 @@ CREATE TABLE tvgenre_listing (
 		FOREIGN KEY (tvseries_id)
         REFERENCES TV_series (tvseries_id)
         ON UPDATE CASCADE
+        ON DELETE SET NULL,
+	CONSTRAINT fk_tvgenrelisting_genre_id
+		FOREIGN KEY (genre_id)
+        REFERENCES Genre (genre_id)
+        ON UPDATE CASCADE
         ON DELETE SET NULL
 );
 
