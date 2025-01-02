@@ -76,7 +76,7 @@ The purpose of the MyStream Review database is to gather & maintain information 
 
 ### EER Model - MySQL
 
-![image](https://user-images.githubusercontent.com/122691372/232228567-6ad47729-0aaa-424d-9b6a-2523a3b9a875.png)
+![mystreamreview-eer](https://github.com/user-attachments/assets/a0852227-084e-453a-94d8-caafd8109ce8)
 
 ### Description of Tables
 
