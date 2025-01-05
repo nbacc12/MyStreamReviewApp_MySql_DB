@@ -4,11 +4,11 @@
 
 /*--- Description of Tables:
 Users -->  Stores user information
-TV_series --> Stores information of added TV series
-Like_rating --> Record of Likes given by a specific user for a TV Series, 0 – dislike, 1 – Like
+TV_series --> Stores TV series information
+Like_rating --> Record of likes given by a specific user for a TV Series, 0 – dislike, 1 – Like
 Review --> Record of reviews written by a specific user for a TV series
-Genre --> Stores list of Genre a TV series could fall under
-Streaming_service --> Stores list of Streaming platform provider of a TV series
+Genre --> Stores list of different genres
+Streaming_service --> Stores list of Streaming platform providers
 Permission --> List of roles a user may have, regular or admin
 user_tvlisting --> Linking table that stores list of users with admin rights who updated/edited a TV series listing
 user_permission --> Linking table that stores a list of roles assigned to a user
