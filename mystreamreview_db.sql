@@ -501,7 +501,7 @@ START TRANSACTION;
     VALUES (6, 1, 'I liked the show.', current_timestamp, current_timestamp);
 ROLLBACK;
 
-/* Allow a user to update a previously posted review for a tv series */
+/* Allow a user to update a previously posted review for  tv series */
 START TRANSACTION;
 	Set @review_id = (SELECT review_id FROM Review WHERE user_id = 3 AND tvseries_id = 4);
     
