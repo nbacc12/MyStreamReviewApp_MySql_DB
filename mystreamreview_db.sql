@@ -480,3 +480,31 @@ ROLLBACK;
 START TRANSACTION;
 	UPDATE User SET is_admin = true, updated_at = current_timestamp WHERE user_id = 2;
 ROLLBACK;
+
+/* Allow a user to rate a tv series */
+START TRANSACTION;
+	INSERT INTO Like_rating (user_id, tvseries_id, is_like, created_at, updated_at)
+    VALUES (2, 3, true, current_timestamp, current_timestamp);
+ROLLBACK;
+
+/* Allow a user to update their like rating */
+START TRANSACTION;
+	Set @like_id = (SELECT like_id FROM Like_rating WHERE user_id = 5 AND tvseries_id = 1);
+    
+	UPDATE Like_rating SET is_like = false, updated_at = current_timestamp
+    WHERE like_id = @like_id;
+ROLLBACK;
+
+/* Allow a user to post review for a tv series */
+START TRANSACTION;
+	INSERT INTO Review (user_id, tvseries_id, content, created_at, updated_at)
+    VALUES (6, 1, 'I liked the show.', current_timestamp, current_timestamp);
+ROLLBACK;
+
+/* Allow a user to update a previously posted review for a tv series */
+START TRANSACTION;
+	Set @review_id = (SELECT review_id FROM Review WHERE user_id = 3 AND tvseries_id = 4);
+    
+    UPDATE Review SET content = 'The treasure hunt itself was good, when the focus was on that.', updated_at = current_timestamp
+    WHERE review_id = @review_id;
+ROLLBACK;
