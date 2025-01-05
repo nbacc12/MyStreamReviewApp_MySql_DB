@@ -1,6 +1,6 @@
 # MyStreamReviewApp MySql Database
 
-This project involves developing a relational database for a Review web application.  Users will be able to review and rate a tv series currently available on a streaming platform.  MySQL is the relational database management system used for this project 
+This project focuses on building a robust relational database with MySQL to support a user-friendly web application. The application will enable users to submit reviews and ratings for TV series currently avaiable on various streaming services. This repository includes the database schema, SQL scripts, and related documentation.
 
 ## Technology Stack
 
