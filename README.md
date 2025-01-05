@@ -22,6 +22,8 @@ This project involves developing a relational database for a Review web applicat
 7) Click on `Test Connection` to verify the connection
 8) Once verified, click on `OK`
 9) Test database by entering `SELECT NOW()` and executing it
+10) Copy and paste the entire SQL script from `mystreamreview_db.sql` into MySQL Workbench
+11) Execute the queries from the `Create Tables` & `Insert Data into Tables` sections
 
 ## Database Design
 
